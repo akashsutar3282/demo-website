@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bicoin Design</title>
+    <script src="https://kit.fontawesome.com/69d2690154.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            background: #42455a;
+            background-size: contain;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            background: #42455a;
+            background-size: contain;
+        }
+
+        .menu ul {
+            display: inline-flex;
+            margin: 50px;
+        }
+
+        .menu ul li {
+            list-style: none;
+            margin: 0 20px;
+            color: #b2b1b1;
+            cursor: pointer;
+        }
+
+        .logo img {
+            width: 30px;
+            margin-top: -7px;
+            margin-right: 48px;
+        }
+
+        .active {
+            color: darkturquoise !important;
+        }
+
+        .signup-btn {
+            position: absolute;
+            top: 40px;
+            right: 80px;
+            text-decoration: none;
+            color: white;
+            border: 2px solid transparent;
+            border-radius: 20px;
+            background-image: linear-gradient(#42455a, #42455a), radial-gradient(circle at top left, #fd00da, #19d7f8);
+            background-origin: border-box;
+            background-clip: content-box, border-box;
+        }
+
+        .signup-btn span {
+            display: block;
+            padding: 8px 22px;
+        }
+
+        .banner {
+            width: 80%;
+            height: 70%;
+            top: 25%;
+            left: 130px;
+            position: absolute;
+            color: white;
+        }
+
+        .app-text {
+            width: 50%;
+            float: left;
+        }
+
+        .app-text h1 {
+            font-size: 43px;
+            width: 640px;
+            position: relative;
+            margin-left: 40px;
+        }
+
+        .app-text p {
+            width: 640px;
+            font-size: 15px;
+            margin: 30px 0 30px 40px;
+            color: grey;
+        }
+
+        .app-picture {
+            width: 50%;
+            float: right;
+        }
+
+        .app-picture img {
+            width: 100%;
+            float: right;
+        }
+
+        .play-btn {
+            margin-left: 40px;
+            display: inline-flex;
+
+        }
+
+        .play-btn-inner {
+            width: 50px;
+            height: 50px;
+            border: 2px solid transparent;
+            border-radius: 50%;
+            background-image: linear-gradient(#42455a, #42455a), radial-gradient(circle at top left, #fd00da, #19d7f8);
+            background-origin: border-box;
+            background-clip: content-box, border-box;
+            text-align: center;
+        }
+
+        .play-btn-inner .fa-play {
+            padding: 18px 0;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        small {
+            margin: auto 20px;
+            cursor: pointer;
+            font-size: 12px;
+            color: #19d7f8;
+            letter-spacing: 3px;
+        }
+
+        .quick-links {
+            left: 0;
+            bottom: 0;
+            position: absolute;
+            background: linear-gradient(to right, #db1bf6, #19d7f9);
+        }
+
+        .quick-links ul {
+            display: inline-flex;
+            margin: 30px;
+            text-align: center;
+        }
+
+        .quick-links ul li {
+            list-style: none;
+            margin: 0 50px;
+            cursor: pointer;
+        }
+
+        .quick-links ul li .fa {
+            font-size: 25px;
+            color: #fff;
+        }
+
+        .quick-links ul li p {
+            margin-top: 15px;
+            color: #fff;
+        }
+
+        .social-icons {
+            right: 72px;
+            bottom: 35px;
+            position: absolute;
+        }
+
+        .social-icons ul li {
+            list-style: none;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .social-icons ul li a {
+            color: #999;
+            border: 1px solid #999;
+            border-radius: 50%;
+            padding: 5px;
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li class="logo"><img src="images/diamond.png" alt=""></li>
+                <li class="active">Home</li>
+                <li>Services</li>
+                <li>Product</li>
+                <li>Contact</li>
+                <li>Enquiry</li>
+                <li><a href="#" class="signup-btn"><span>Sign Up</span></a></li>
+            </ul>
+        </div>
+        <div class="banner">
+            <div class="app-text">
+                <h1>Our basic thesis for bitcoin <br> is that it is better than gold.</h1>
+                <p>Contrary to popular belief, Lorem Ipsum in not simply random<br> text. It has roots in a piece of
+                    classical latin litrature from 45 BC,<br> making it over 2000 years old</p>
+
+                <div class="play-btn">
+                    <div class="play-btn-inner">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                    <small><b>LEARN MORE</b></small>
+                </div>
+            </div>
+
+            <div class="app-picture">
+                <img src="images/Art.png" alt="">
+            </div>
+        </div>
+        <div class="quick-links">
+            <ul>
+                <li> <i class="fa fa-share-alt"></i>
+                    <p>SHARE TO</p>
+                </li>
+                <li> <i class="fa fa-audio-description"></i>
+                    <p>RECENT NEWS</p>
+                </li>
+                <li> <i class="fa fa-cog"></i>
+                    <p>ANALYTICS</p>
+                </li>
+                <li> <i class="fa fa-btc"></i>
+                    <p>WALLET</p>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="social-icons">
+            <ul>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <img src="images/Art.png" alt="">
+    <img src="images/diamond.png" alt="">
+</body>
+
+</html>
